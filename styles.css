@@ -13,7 +13,7 @@ body {
   margin: 0;
 }
 html{
-  overflow-x: hidden;
+overflow-x: hidden;
 }
 
 .logo img {
@@ -378,7 +378,6 @@ button:hover {
   display: flex;
   align-items: center;
   margin-top: 50px;
-  overflow-x: hidden;
 }
 
 .photo {
@@ -398,7 +397,6 @@ button:hover {
   flex: 1;
   padding-left: 20px;
   border-left: 1px solid #ccc;
-  overflow-x: hidden;
 }
 
 .info h3 {
