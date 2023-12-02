@@ -106,40 +106,42 @@ header {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: transparent;
-  color: #fff;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 20px !important;
+  background-color: transparent !important;
+  color: #fff !important;
 }
 
 .logo {
-  font-size: 1.5em;
+  font-size: 1.5em !important;
 }
 
 .nav-links {
-  list-style-type: none;
-  display: flex;
+  list-style-type: none !important;
+  display: flex !important;
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0 15px ;
+
+
 }
 
 .nav-link {
-  text-decoration: none;
-  color: #ffffff;
+  text-decoration: none !important;
+  color: #ffffff ;
  
   /* Color transition effect */
 }
 
 .nav-link:hover {
-  color: #ff6699;
+  color: #ff6699  !important;
   /* Hover color */
 }
 .navbar{
-  transition: color 0.3s ease;
+  transition: color 0.3s ease !important;
 }
 
 .heading {
@@ -154,10 +156,10 @@ header {
 
 /* Burger menu styles */
 .burger {
-  display: none;
+  display: none !important;
   /* Hide initially */
-  flex-direction: column;
-  cursor: pointer;
+  flex-direction: column !important;
+  cursor: pointer !important;
 }
 
 .line1,
@@ -176,57 +178,60 @@ header {
   header {
   z-index: 100;
   }
+   .navbar{
+    justify-content: space-between !important;
+   }
 
   .nav-links {
-    display: none;
+    display: none !important;
     /* Hide navigation links */
-    opacity: 0;
+    opacity: 0 !important;
     /* Initially hidden */
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out !important;
   }
 
   .burger {
-    display: flex;
-    z-index: 1;
+    display: flex !important;
+    z-index: 1 !important;
     /* Show burger menu */
   }
 
-  .nav-active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
-    position: absolute;
-    top:80px;
+  .nav-active  {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    background-color: transparent !important;
+    position: absolute !important;
+    top:80px !important;
     /* Adjust as needed */
-    width: 100%;
-    opacity: 1;
+    width: 100% !important;
+    opacity: 1 !important;
     /* Visible when active */
-    animation: slideIn 0.5s forwards;
+    animation: slideIn 0.5s forwards !important;
   }
 
   .nav-active li {
-    margin: 20px 0;
+    margin: 20px 0 !important;
   }
 
   .nav-active .nav-link {
-    color:black;
-    font-weight: bolder;
-    transition:  0.5s ease-in-out;
+    color:black !important;
+    font-weight: bolder !important;
+    transition:  0.5s ease-in-out !important;
   }
 
   .burger .line1.rotate-down,
   .burger .line3.rotate-up {
-    transform: translateY(8px) rotate(-45deg);
+    transform: translateY(8px) rotate(-45deg) !important;
   }
 
   .burger .line2.hide {
-    opacity: 0;
+    opacity: 0 !important; 
   }
 }
 
 /* smooth opening effect */
-@keyframes slideIn {
+ @keyframes slideIn {
   from {
     transform: translateY(-100%);
   }
@@ -236,43 +241,8 @@ header {
   }
 }
 
-/* New styles for the slider */
-.slider {
-  width: 30%;
-  margin: 20px 46%;
-  overflow: hidden;
-  position: relative;
-  align-items: center;
-}
 
-.slide {
-  display: none;
-}
 
-.slide.active {
-  display: block;
-}
-
-.slide img {
-  /* max-height: 400px; */
-  /* Set the maximum height as needed */
-  width: 40%;
-  border-radius: 20px;
-}
-
-/* Updated styles for the slider */
-.slide {
-  display: none;
-  opacity: 0;
-  /* Hide slides initially */
-  transition: opacity 2s ease;
-  /* Smooth fade transition */
-}
-
-.slide.active {
-  display: block;
-  opacity: 1;
-}
 
 /* styling for information 
    Styles for photo gallery
@@ -312,14 +282,14 @@ header {
   } */
 /* For slider below 900px */
 @media screen and (max-width: 900px) {
-  .slider {
+  /* .slider {
     width: 87%;
-    /* max-width: 800px; */
+ 
     margin: 20px 30%;
     overflow: hidden;
     position: relative;
   }
-}
+} */
 
 /* style for slider button */
 /* Styles for slider navigation buttons */
@@ -332,7 +302,7 @@ button {
   padding: 8px 16px;
   margin: 0 5px;
   background-color: transparent;
-  color: white;
+  /* color: white; */
   border: solid black;
   border-radius: 4px;
   cursor: pointer;
@@ -345,8 +315,8 @@ button:hover {
 }
 
 /*  code for quick appearing slid */
-.no-transition {
-  transition: none;
+/* .no-transition {
+  transition: none; */
   /* Disable transition for immediate appearance */
 }
 
@@ -356,6 +326,9 @@ button:hover {
   font-size: 20px;
   align-items: center;
   justify-content: center;
+}
+button{
+  background-color: transparent;
 }
 
 
@@ -368,33 +341,37 @@ button:hover {
   margin-top: 10px;
 
   /* Optional: Add background or border for the container */
-  background-color: #f9f9f9;
+  background-color: transparent;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
 }
-
+/* 
 .split-layout {
   display: flex;
   align-items: center;
   margin-top: 50px;
-}
+ justify-content: normal ;
+} */
 
 .photo {
-  flex: 1;
+  /* flex: 1; */
   padding-right: 20px;
+
 }
 
 .photo img {
   /* max-width: 100%; */
-  width: 40%;
+  width: 10%;
   display: block;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 5%;
 }
 
 .info {
-  flex: 1;
+  /* flex: 1; */
   padding-left: 20px;
   border-left: 1px solid #ccc;
 }
@@ -411,22 +388,3 @@ button:hover {
   color: #666;
 }
 
-@keyframes rotateAnimation {
-  0% {
-    transform: perspective(1000px) rotateY(30deg);
-  }
-
-  50% {
-    transform: perspective(1000px) rotateY(-30deg);
-  }
-
-  100% {
-    transform: perspective(1000px) rotateY(30deg);
-  }
-}
-
-.slider {
-  perspective: 1000px;
-  animation: rotateAnimation 4s infinite;
-  /* Change 4s to adjust the animation duration */
-}
