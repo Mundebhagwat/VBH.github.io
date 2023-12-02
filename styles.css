@@ -77,7 +77,12 @@ body {
   color: #666;
   transition: transform 0.5s ease;
   /* Sliding effect */
+  overflow: hidden !important;
 }
+.content p {
+  height: 80px !important;
+}
+
 
 /* Anchor styles */
 .anchor {
