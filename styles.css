@@ -82,8 +82,9 @@ body {
 .content p {
   height: 80px !important;
 }
-
-
+.yheading{
+  margin-left: 30% !important;
+}
 /* Anchor styles */
 .anchor {
   color: #ff6699;
@@ -177,7 +178,10 @@ header {
   transition: transform 0.3s ease;
   /* Transform effect */
 }
-
+.sidebutton button{
+    margin-left: 40% !important;
+    border-radius: 6px !important;
+}
 /* media query for below 500px screen */
 @media screen and (max-width: 500px) {
   .info p{
@@ -192,6 +196,9 @@ header {
   }
   .photo img {
     width: 16% !important;
+  }
+  .yheading h1 {
+    font-size: 15px !important;
   }
 }
 
@@ -324,15 +331,13 @@ button {
   padding: 8px 16px;
   margin: 0 5px;
   background-color: transparent;
+  border:  rgb(126, 95, 95);
   /* color: white; */
-  border: solid black;
-  border-radius: 4px;
   cursor: pointer;
   font-weight: bolder;
 }
 
 button:hover {
-  background-color: transparent;
   font-weight: bolder;
 }
 
@@ -343,11 +348,10 @@ button:hover {
 }
 
 /* Styling for next-page */
-.next-page {
-  display: flex;
+.next-page button {
+  margin-left: 40% !important;
   font-size: 20px;
-  align-items: center;
-  justify-content: center;
+  border-radius: 6px !important;
 }
 button{
   background-color: transparent;
