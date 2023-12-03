@@ -180,7 +180,8 @@ header {
 }
 .sidebutton button{
     margin-left: 40% !important;
-    border-radius: 6px !important;
+    border-radius: 5px !important;
+     border: solid rgb(71, 69, 69) !important;
 }
 /* media query for below 500px screen */
 @media screen and (max-width: 500px) {
@@ -199,6 +200,9 @@ header {
   }
   .yheading h1 {
     font-size: 15px !important;
+  }
+  .yheading{
+    margin-left: 15% !important;
   }
 }
 
@@ -311,17 +315,7 @@ header {
   } */
 /* For slider below 900px */
 @media screen and (max-width: 900px) {
-  /* .slider {
-    width: 87%;
- 
-    margin: 20px 30%;
-    overflow: hidden;
-    position: relative;
-  }
-} */
 
-/* style for slider button */
-/* Styles for slider navigation buttons */
 .slider-buttons {
   text-align: center;
   margin-top: 20px;
@@ -331,27 +325,24 @@ button {
   padding: 8px 16px;
   margin: 0 5px;
   background-color: transparent;
-  border:  rgb(126, 95, 95);
-  /* color: white; */
+  border: solid black;
   cursor: pointer;
   font-weight: bolder;
 }
-
-button:hover {
-  font-weight: bolder;
 }
-
 /*  code for quick appearing slid */
 /* .no-transition {
   transition: none; */
   /* Disable transition for immediate appearance */
-}
+
 
 /* Styling for next-page */
 .next-page button {
   margin-left: 40% !important;
   font-size: 20px;
-  border-radius: 6px !important;
+  border-radius: 5px !important;
+  border: solid rgb(81, 79, 79) !important;
+
 }
 button{
   background-color: transparent;
