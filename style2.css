@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&family=Poppins:wght@600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* Styling for Navigation  */
+.logo img {
+    display: flex;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.anchor {
+    color: #ff6699;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for anchor */
+.anchor:hover {
+    color: #ff3366;
+}
+
+/* Selection effect */
+::selection {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+/* Navigation bar styles */
+header {
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 20px !important;
+    background-color: transparent !important;
+    color: aqua;
+}
+
+.logo {
+    font-size: 1.5em !important;
+}
+
+.nav-links {
+    list-style-type: none !important;
+    display: flex !important;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none !important;
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #ff6699 !important;
+    /* Hover color */
+}
+
+.navbar {
+    transition: color 0.3s ease !important;
+}
+
+/* Styling for burger  */
+.burger {
+    display: none !important;
+    /* Hide initially */
+    flex-direction: column !important;
+    cursor: pointer !important;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #FFD700;
+    margin: 4px;
+    transition: transform 0.3s ease;
+    /* Transform effect */
+}
+.paragraph { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font-family:  'Poppins', sans-serif;
+    height: 50px;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.sidebutton button{
+     background-color: white;
+     font-family: 'Poppins', sans-serif;
+}
+/* media query below 500px */
+@media screen and (max-width:500px) {
+    .item h1{
+       font-size: 8px !important;
+    }
+    .item p{
+        font-size: 7px !important;
+    }
+    .paragraph{
+        font-size: 14px;
+        margin-top: -20px;
+    }
+    button{
+       font-size: 7px !important;
+       padding: 3px 3px !important;
+    }
+    
+}
+
+/* media query for navigation */
+
+@media screen and (max-width: 900px) {
+    header {
+        z-index: 100;
+    }
+
+    .navbar {
+        justify-content: space-between !important;
+    }
+
+    .nav-links {
+        display: none !important;
+        /* Hide navigation links */
+        opacity: 0 !important;
+        /* Initially hidden */
+        transition: opacity 0.5s ease-in-out !important;
+    }
+
+    .burger {
+        display: flex !important;
+        z-index: 1 !important;
+        /* Show burger menu */
+    }
+
+    .nav-active {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        background-color: transparent !important;
+        position: absolute !important;
+        top: 80px !important;
+        /* Adjust as needed */
+        width: 100% !important;
+        opacity: 1 !important;
+        /* Visible when active */
+        animation: slideIn 0.5s forwards !important;
+    }
+
+    .nav-active li {
+        margin: 20px 0 !important;
+    }
+
+    .nav-active .nav-link {
+        color: black !important;
+        font-weight: bolder !important;
+        transition: 0.5s ease-in-out !important;
+    }
+
+    .burger .line1.rotate-down,
+    .burger .line3.rotate-up {
+        transform: translateY(8px) rotate(-45deg) !important;
+    }
+
+    .burger .line2.hide {
+        opacity: 0 !important;
+    }
+}
+
+/* smooth opening effect */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* styling for container1 */
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.item {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+.item img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    float: left;
+    margin-right: 20px;
+}
+.item p{
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.item h1{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+/*  <hr> separater */
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
