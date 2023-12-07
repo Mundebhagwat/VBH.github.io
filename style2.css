@@ -121,6 +121,9 @@ header {
      background-color: white;
      font-family: 'Poppins', sans-serif;
 }
+.head1{
+    font-family: 'Merriweather', serif;
+  }
 /* media query below 500px */
 @media screen and (max-width:500px) {
     .item h1{
