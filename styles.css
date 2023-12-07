@@ -1,15 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&family=Poppins:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&family=Merriweather:ital,wght@1,900&family=Poppins:wght@600&display=swap');
 body {
   margin: 0;
   padding: 0;
   /* overflow: hidden; */
-  background-color: #f0f0f0;
+  background-color:rgb(165, 226, 43) !important;
   /* Fallback color in case the animation doesn't run */
-  animation: changeColors 20s linear infinite;
+  /* animation: changeColors 20s linear infinite; */
   /* Change colors every 10 seconds */
   overflow-x: hidden;
+  opacity: 1;
 }
 *{
   padding: 0;
@@ -24,35 +25,35 @@ overflow-x: hidden;
   height: 50px;
   border-radius: 50px;
 }
-
+/* 
 @keyframes changeColors {
 
   0%,
   100% {
     background-color: #ffcc00;
-    /* Initial and final color */
+  
   }
 
   20% {
     background-color: #ff6699;
-    /* Color transition after 4 seconds */
+    
   }
 
   40% {
     background-color: #66ccff;
-    /* Color transition after 8 seconds */
+   
   }
 
   60% {
     background-color: #99ff66;
-    /* Color transition after 12 seconds */
+   
   }
 
   80% {
     background-color: #ff99cc;
-    /* Color transition after 16 seconds */
+   
   }
-}
+} */
 
 /* Styling for the first div tag */
 /* General styles */
@@ -80,6 +81,7 @@ body {
   /* font-size: 2.5em; */
   color: #333;
   transition: color 0.3s ease;
+  font-family: 'Merriweather', serif;
   /* Cool color transition effect */
 }
 
@@ -90,6 +92,7 @@ body {
   transition: transform 0.5s ease;
   /* Sliding effect */
   overflow: hidden !important;
+  font-family: 'Poppins', sans-serif;
 }
 .content p {
   height: 80px !important;
@@ -194,6 +197,9 @@ header {
     margin-left: 40% !important;
     border-radius: 5px !important;
      border: solid rgb(71, 69, 69) !important;
+}
+.yheading{
+  font-family: 'Merriweather', serif;
 }
 /* media query for below 500px screen */
 @media screen and (max-width: 500px) {
