@@ -201,6 +201,9 @@ header {
 .yheading{
   font-family: 'Merriweather', serif;
 }
+.head1{
+  font-family: 'Merriweather', serif;
+}
 /* media query for below 500px screen */
 @media screen and (max-width: 500px) {
   .info p{
