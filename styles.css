@@ -5,12 +5,11 @@ body {
   margin: 0;
   padding: 0;
   /* overflow: hidden; */
-  background-color:rgb(165, 226, 43) !important;
+  background-color:#ffffff !important;
   /* Fallback color in case the animation doesn't run */
   /* animation: changeColors 20s linear infinite; */
   /* Change colors every 10 seconds */
   overflow-x: hidden;
-  opacity: 1;
 }
 *{
   padding: 0;
@@ -152,7 +151,7 @@ header {
 
 .nav-link {
   text-decoration: none !important;
-  color: #ffffff ;
+  color: rgb(16, 16, 15) !important; 
  
   /* Color transition effect */
 }
@@ -420,6 +419,7 @@ button{
 .info p {
   font-size: 16px;
   line-height: 1.6;
-  color: #666;
+  color:#fff;
 }
+
 
