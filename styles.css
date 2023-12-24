@@ -5,7 +5,8 @@ body {
   margin: 0;
   padding: 0;
   /* overflow: hidden; */
-  background-color:#ffffff !important;
+  /* background-color:#ffffff !important; */
+  background-image: linear-gradient(to bottom right, green, yellow) !important;
   /* Fallback color in case the animation doesn't run */
   /* animation: changeColors 20s linear infinite; */
   /* Change colors every 10 seconds */
