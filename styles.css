@@ -6,7 +6,7 @@ body {
   padding: 0;
   /* overflow: hidden; */
   /* background-color:#ffffff !important; */
-  background-image: linear-gradient(to bottom right, green, yellow) !important;
+  background-color:black !important;
   /* Fallback color in case the animation doesn't run */
   /* animation: changeColors 20s linear infinite; */
   /* Change colors every 10 seconds */
@@ -19,7 +19,72 @@ body {
 html{
 overflow-x: hidden;
 }
+button>a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
 
+}
+/* Buttton hovering effect */
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none ;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+/* Above Code For Button Effect */
 .logo img {
   display: flex;
   height: 50px;
@@ -66,11 +131,13 @@ body {
 }
 .info p {
   font-family: 'Poppins', sans-serif;
+  color: white;
 }
 .yheading{
   font-family: 'Poppins', sans-serif;
-  color: #513434;
+  color: white;
 }
+
 .content {
   padding: 0px;
   text-align: center;
@@ -96,6 +163,7 @@ body {
 }
 .content p {
   height: 80px !important;
+  color: white;
 }
 .yheading{
   margin-left: 30% !important;
@@ -152,7 +220,7 @@ header {
 
 .nav-link {
   text-decoration: none !important;
-  color: rgb(16, 16, 15) !important; 
+  color: white !important; 
  
   /* Color transition effect */
 }
@@ -166,13 +234,7 @@ header {
 }
 
 .heading {
-  background-image: linear-gradient(45deg,
-      #2e73ff 20%,
-      #ff0032 52%,
-      #9c143f 95%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 
 /* Burger menu styles */
@@ -205,6 +267,7 @@ header {
 @media screen and (max-width: 500px) {
   .info p{
     font-size: 7px !important;
+    color: white !important;
   }
   .h4,h4{
     font-size: 8px !important;
@@ -220,7 +283,13 @@ header {
     font-size: 15px !important;
   }
   .yheading{
-    margin-left: 15% !important;
+    margin-left: 14% !important;
+  }
+  .glow-on-hover{
+    width: 100px;
+    height: 20px;
+    font-size: 5px !important;
+    padding: 10px;
   }
 }
 
@@ -259,6 +328,7 @@ header {
     opacity: 1 !important;
     /* Visible when active */
     animation: slideIn 0.5s forwards !important;
+    color: white;
   }
 
   .nav-active li {
@@ -266,7 +336,7 @@ header {
   }
 
   .nav-active .nav-link {
-    color:black !important;
+    color:white !important;
     font-weight: bolder !important;
     transition:  0.5s ease-in-out !important;
   }
@@ -278,6 +348,11 @@ header {
 
   .burger .line2.hide {
     opacity: 0 !important; 
+  }
+  .glow-on-hover{
+    width: 50%;
+    height: 50px;
+    font-size: 10px !important;
   }
 }
 
