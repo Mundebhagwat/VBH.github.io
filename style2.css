@@ -254,6 +254,7 @@ header {
         opacity: 1 !important;
         /* Visible when active */
         animation: slideIn 0.5s forwards !important;
+        color: white;
     }
 
     .nav-active li {
@@ -261,7 +262,7 @@ header {
     }
 
     .nav-active .nav-link {
-        color: black !important;
+        color: white !important;
         font-weight: bolder !important;
         transition: 0.5s ease-in-out !important;
     }
