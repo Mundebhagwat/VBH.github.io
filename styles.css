@@ -1,35 +1,39 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&family=Merriweather:ital,wght@1,900&family=Poppins:wght@600&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   /* overflow: hidden; */
   /* background-color:#ffffff !important; */
-  background-color:black !important;
+  background-color: black !important;
   /* Fallback color in case the animation doesn't run */
   /* animation: changeColors 20s linear infinite; */
   /* Change colors every 10 seconds */
   overflow-x: hidden;
 }
-*{
+
+* {
   padding: 0;
   margin: 0;
 }
-html{
-overflow-x: hidden;
+
+html {
+  overflow-x: hidden;
 }
-button>a{
+
+button>a {
   text-decoration: none;
   color: white;
   padding: 10px;
 
 }
+
 /* Buttton hovering effect */
 .glow-on-hover {
   width: 220px;
   height: 50px;
-  border: none ;
+  border: none;
   outline: none;
   color: #fff;
   background: #111;
@@ -38,12 +42,13 @@ button>a{
   z-index: 0;
   border-radius: 10px;
 }
+
 .glow-on-hover:before {
   content: '';
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
@@ -80,16 +85,26 @@ button>a{
 }
 
 @keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
 }
+
 /* Above Code For Button Effect */
 .logo img {
   display: flex;
   height: 50px;
   border-radius: 50px;
 }
+
 /* 
 @keyframes changeColors {
 
@@ -126,16 +141,20 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
-.info h4{
+
+.info h4 {
   font-family: 'Poppins', sans-serif;
 }
+
 .info p {
   font-family: 'Poppins', sans-serif;
   color: white;
 }
-.yheading{
+
+.yheading {
   font-family: 'Poppins', sans-serif;
   color: white;
+  justify-content: center;
 }
 
 .content {
@@ -161,13 +180,16 @@ body {
   overflow: hidden !important;
   font-family: 'Poppins', sans-serif;
 }
+
 .content p {
   height: 80px !important;
   color: white;
 }
-.yheading{
+
+.yheading {
   margin-left: 30% !important;
 }
+
 /* Anchor styles */
 .anchor {
   color: #ff6699;
@@ -213,23 +235,24 @@ header {
 }
 
 .nav-links li {
-  margin: 0 15px ;
+  margin: 0 15px;
 
 
 }
 
 .nav-link {
   text-decoration: none !important;
-  color: white !important; 
- 
+  color: white !important;
+
   /* Color transition effect */
 }
 
 .nav-link:hover {
-  color: #ff6699  !important;
+  color: #ff6699 !important;
   /* Hover color */
 }
-.navbar{
+
+.navbar {
   transition: color 0.3s ease !important;
 }
 
@@ -255,52 +278,72 @@ header {
   transition: transform 0.3s ease;
   /* Transform effect */
 }
-.sidebutton button{
-    margin-left: 40% !important;
-    border-radius: 5px !important;
-     border: solid rgb(71, 69, 69) !important;
+
+.sidebutton button {
+  margin-left: 40% !important;
+  border-radius: 5px !important;
+  border: solid rgb(71, 69, 69) !important;
 }
-.yheading{
+
+.yheading {
   font-family: 'Merriweather', serif;
 }
+
 /* media query for below 500px screen */
 @media screen and (max-width: 500px) {
-  .info p{
+  .info p {
     font-size: 7px !important;
     color: white !important;
   }
-  .h4,h4{
+
+  .h4,
+  h4 {
     font-size: 8px !important;
   }
-  button{
+
+  button {
     font-size: 7px !important;
     padding: 0 8px !important;
   }
+
   .photo img {
     width: 16% !important;
   }
+
   .yheading h1 {
     font-size: 15px !important;
   }
-  .yheading{
+
+  .yheading {
     margin-left: 14% !important;
   }
-  .glow-on-hover{
+
+  .glow-on-hover {
     width: 100px;
     height: 20px;
     font-size: 5px !important;
     padding: 10px;
+  }
+
+  /* style for carsual buttons */
+  .carousel-control-prev {
+    margin-top: 120%;
+  }
+
+  .carousel-control-next {
+    margin-top: 120%;
   }
 }
 
 /* Media query for responsive design */
 @media screen and (max-width: 900px) {
   header {
-  z-index: 100;
+    z-index: 100;
   }
-   .navbar{
+
+  .navbar {
     justify-content: space-between !important;
-   }
+  }
 
   .nav-links {
     display: none !important;
@@ -316,13 +359,13 @@ header {
     /* Show burger menu */
   }
 
-  .nav-active  {
+  .nav-active {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     background-color: transparent !important;
     position: absolute !important;
-    top:80px !important;
+    top: 80px !important;
     /* Adjust as needed */
     width: 100% !important;
     opacity: 1 !important;
@@ -336,9 +379,9 @@ header {
   }
 
   .nav-active .nav-link {
-    color:white !important;
+    color: white !important;
     font-weight: bolder !important;
-    transition:  0.5s ease-in-out !important;
+    transition: 0.5s ease-in-out !important;
   }
 
   .burger .line1.rotate-down,
@@ -347,9 +390,10 @@ header {
   }
 
   .burger .line2.hide {
-    opacity: 0 !important; 
+    opacity: 0 !important;
   }
-  .glow-on-hover{
+
+  .glow-on-hover {
     width: 50%;
     height: 50px;
     font-size: 10px !important;
@@ -357,7 +401,7 @@ header {
 }
 
 /* smooth opening effect */
- @keyframes slideIn {
+@keyframes slideIn {
   from {
     transform: translateY(-100%);
   }
@@ -409,24 +453,25 @@ header {
 /* For slider below 900px */
 @media screen and (max-width: 900px) {
 
-.slider-buttons {
-  text-align: center;
-  margin-top: 20px;
+  .slider-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: solid black;
+    cursor: pointer;
+    font-weight: bolder;
+  }
 }
 
-button {
-  padding: 8px 16px;
-  margin: 0 5px;
-  background-color: transparent;
-  border: solid black;
-  cursor: pointer;
-  font-weight: bolder;
-}
-}
 /*  code for quick appearing slid */
 /* .no-transition {
   transition: none; */
-  /* Disable transition for immediate appearance */
+/* Disable transition for immediate appearance */
 
 
 /* Styling for next-page */
@@ -437,7 +482,8 @@ button {
   border: solid rgb(81, 79, 79) !important;
 
 }
-button{
+
+button {
   background-color: transparent;
 }
 
@@ -457,6 +503,7 @@ button{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 80%;
 }
+
 /* 
 .split-layout {
   display: flex;
@@ -495,7 +542,64 @@ button{
 .info p {
   font-size: 16px;
   line-height: 1.6;
-  color:#fff;
+  color: #fff;
+}
+
+/* search box styling */
+#search-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#search-input {
+  /* padding: 8px;
+  font-size: 16px; */
+  padding: 12px; /* Increase the padding */
+  font-size: 18px; /* Increase the font size */
+  height: 40px; /* Increase the height */
+  flex-grow: 0.2;
+}
+
+#suggestions-container {
+  margin-top: 50px;
+  max-height: 150px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: absolute;
+  width: 50%;
+  display: none;
+  background-color: #fff;
+  flex-grow: 0.2;
+  z-index: 1;
+}
+
+#suggestions-container div {
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#suggestions-container div:hover {
+  background-color: #f0f0f0;
+}
+
+.search_button{
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
 }
 
 
+/* style for prev and next button */
+.carousel-control-prev {
+  margin-top: 80%;
+}
+
+.carousel-control-next {
+  margin-top: 80%;  
+}

@@ -1,0 +1,38 @@
+const youtubeChannels = [
+    { name: 'entertainment', page:'page1.html',anchor: 'entertainment'},
+    { name: 'T SERIES', page: 'page1.html', anchor: 'T SERIES' },
+    { name: 'CARRYMINATI', page: 'page1.html', anchor: 'CARRYMI'},
+    { name: 'AIB(ALL INDIA BAKCHOD)', page: 'page1.html', anchor: 'AIB(ALL INDIA BAKCHOD)' },
+    { name: 'FILTER COPY ', page: 'page1.html', anchor: 'FILTER COPY ' },
+    { name: 'THE VIRAL FEVER', page: 'page1.html', anchor: 'THE VIRAL FEVER' },
+    { name: 'BB KI VINES', page: 'page1.html', anchor: 'BB KI VINES' },
+    { name: 'ZEE MUSIC COMPANY', page: 'page1.html', anchor: 'ZEE MUSIC COMPANY' },
+    { name: 'SANAM', page: 'page1.html', anchor: 'SANAM' },
+    { name: 'THE SCREENPATTI(TSP)', page: 'page1.html', anchor: 'THE SCREENPATTI(TSP)' },
+    { name: 'NETFLIX', page: 'page1.html', anchor: 'NETFLIX' },
+    { name: 'AMIT BHADANA', page: 'page1.html', anchor: 'AMIT BHADANA' },
+    { name: 'GAURAV TANEJA(FLYING BEAST)', page: 'page1.html', anchor: 'GAURAV TANEJA(FLYING BEAST)' },
+    { name: 'BEING INDIAN', page: 'page1.html', anchor: 'BEING INDIAN' },
+    { name: 'TEAM NAACH', page: 'page1.html', anchor: 'TEAM NAACH' },
+    { name: 'SHEMAAROO ENTERTAINMENT', page: 'page1.html', anchor: 'SHEMAAROO ENTERTAINMENT' },
+      // For Education solution's
+
+
+    {name: 'EDUCATION VERIFIED SOLUTION',page: 'page2.html',anchor : ''},  
+    {name: 'UNACADEMY',page: 'page2.html',anchor : 'UNACADEMY'},  
+    {name: 'KHAN ACADEMY INDIA ',page: 'page2.html',anchor : 'KHAN ACADEMY INDIA '},  
+    {name: 'Byjus',page: 'page2.html',anchor : 'Byjus'},  
+    {name: 'Vedantu',page: 'page2.html',anchor : 'Vedantu'},  
+    {name: 'Examrace',page: 'page2.html',anchor : 'Examrace'},  
+    {name: 'Study IQ Education',page: 'page2.html',anchor : 'Study IQ Education'},  
+    {name: 'Topper learning',page: 'page2.html',anchor : 'Topper learning'},  
+    {name: 'Goyal Brothers Prakashan',page: 'page2.html',anchor : 'Goyal Brothers Prakashan'},  
+    {name: 'Evidyarthi',page: 'page2.html',anchor : 'Evidyarthi'},  
+    {name: 'PW',page: 'page2.html',anchor : 'PW'},  
+    {name: 'Maths N More',page: 'page2.html',anchor : 'Maths N More'},  
+    {name: 'My SirG.com',page: 'page2.html',anchor : 'My SirG.com'},  
+    {name: 'English with Lucy',page: 'page2.html',anchor : 'English with Lucy'},  
+    {name: 'learnex',page: 'page2.html',anchor : 'learnex'},  
+    {name: 'amazing science ',page: 'page2.html',anchor : 'amazing science '},  
+  ];
+
