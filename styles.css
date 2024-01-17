@@ -290,7 +290,7 @@ header {
 }
 
 /* media query for below 500px screen */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) { 
   .info p {
     font-size: 7px !important;
     color: white !important;
@@ -302,7 +302,7 @@ header {
   }
 
   button {
-    font-size: 7px !important;
+    font-size: 7px ;
     padding: 0 8px !important;
   }
 
@@ -550,7 +550,6 @@ button {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-
 }
 
 #search-input {
@@ -560,6 +559,9 @@ button {
   font-size: 18px; /* Increase the font size */
   height: 40px; /* Increase the height */
   flex-grow: 0.2;
+  width: 200px;
+  border-radius:20px ;
+  border: none;
 }
 
 #suggestions-container {
@@ -587,11 +589,11 @@ button {
 }
 
 .search_button{
-  border: 1px solid white;
+  border: none;
   color: white;
-  border-radius: 5px;
   padding: 5px;
-  margin-left: 5px;
+  cursor: pointer;
+  font: 25px bolder;
 }
 
 
@@ -602,4 +604,10 @@ button {
 
 .carousel-control-next {
   margin-top: 80%;  
+}
+/* query for serach box */
+@media screen and (max-width: 500px){
+  #search-input{
+    font-size: 15px;
+  }
 }
