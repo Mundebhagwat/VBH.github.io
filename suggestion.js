@@ -17,7 +17,6 @@ const youtubeChannels = [
     { name: 'SHEMAAROO ENTERTAINMENT', page: 'page1.html', anchor: 'SHEMAAROO ENTERTAINMENT' },
       // For Education solution's
 
-
     {name: 'EDUCATION VERIFIED SOLUTION',page: 'page2.html',anchor : ''},  
     {name: 'UNACADEMY',page: 'page2.html',anchor : 'UNACADEMY'},  
     {name: 'KHAN ACADEMY INDIA ',page: 'page2.html',anchor : 'KHAN ACADEMY INDIA '},  
@@ -33,6 +32,47 @@ const youtubeChannels = [
     {name: 'My SirG.com',page: 'page2.html',anchor : 'My SirG.com'},  
     {name: 'English with Lucy',page: 'page2.html',anchor : 'English with Lucy'},  
     {name: 'learnex',page: 'page2.html',anchor : 'learnex'},  
-    {name: 'amazing science ',page: 'page2.html',anchor : 'amazing science '},  
+    {name: 'amazing science ',page: 'page2.html',anchor : 'amazing science '},
+      // for  DESIGNING VERIFIED SOLUTION
+
+      {name: ' DESIGNING VERIFIED SOLUTION',page: 'page3.html',anchor: ' DESIGNING VERIFIED SOLUTION'},
+      {name: 'SATORI GRAPHICS',page: 'page3.html',anchor: 'SATORI GRAPHICS'},
+      {name: 'CORREA ART',page: 'page3.html',anchor: 'CORREA ART'},
+      {name: 'AJ STUDIO DESIGN',page: 'page3.html',anchor: 'AJ STUDIO DESIGN'},
+      {name: 'YES IM DESIGNER',page: 'page3.html',anchor: 'YES IM DESIGNER'},
+      {name: 'WILL PATERSON',page: 'page3.html',anchor: 'WILL PATERSON'},
+      {name: 'MIR ROM',page: 'page3.html',anchor: 'MIR ROM'},
+      {name: 'GRAPHICS ISLAND',page: 'page3.html',anchor: 'GRAPHICS ISLAND'},
+      {name: 'PIXIVU',page: 'page3.html',anchor: 'PIXIVU'},
+      {name: 'PIXIMPERFECT',page: 'page3.html',anchor: 'PIXIMPERFECT'},
+      {name: 'GFX MENTOR',page: 'page3.html',anchor: 'GFX MENTOR'},
+      {name: 'MAZIC WRITER',page: 'page3.html',anchor: 'MAZIC WRITER'},
+      {name: 'PH LEARN',page: 'page3.html',anchor: 'PH LEARN'},
+      {name: 'GRAPHIC DESIGN HOW TO',page: 'page3.html',anchor: 'GRAPHIC DESIGN HOW TO'},
+      {name: 'GRAPHIC DESIGN WITH ELENA',page: 'page3.html',anchor: 'GRAPHIC DESIGN WITH ELENA'},
+      // for FINANCE VERIFIED SOLUTION
+
+      {name: 'FINANCE VERIFIED SOLUTION',page: 'page4.html',anchor: 'FINANCE VERIFIED SOLUTION'},
+      {name: 'Finology',page: 'page4.html',anchor: 'Finology'},
+      {name: 'Zee Business',page: 'page4.html',anchor: 'Zee Business'},
+      {name: 'MarketGurukul',page: 'page4.html',anchor: 'MarketGurukul'},
+      {name: 'MoneyControl',page: 'page4.html',anchor: 'MoneyControl'},
+      {name: 'Pranjal Kamra',page: 'page4.html',anchor: 'Pranjal Kamra'},
+      {name: 'The Finance School',page: 'page4.html',anchor: 'The Finance School'},
+      {name: 'Trading Campus',page: 'page4.html',anchor: 'Trading Campus'},
+      {name: 'Dr. Ujjwal Patni',page: 'page4.html',anchor: 'Dr. Ujjwal Patni'},
+      {name: 'ChetChat',page: 'page4.html',anchor: 'ChetChat'},
+      {name: ' Akash Gautam',page: 'page4.html',anchor: ' Akash Gautam'},
+      {name: 'Pushkar Raj Thakur',page: 'page4.html',anchor: 'Pushkar Raj Thakur'},
+      {name: 'Narendra Singh Rathore',page: 'page4.html',anchor: 'Narendra Singh Rathore'},
+      {name: 'Dinesh Joshi',page: 'page4.html',anchor: 'Dinesh Joshi'},
+      // for HEALTH VERIFIED SOLUTION
+      {name: 'HEALTH VERIFIED SOLUTION',page: 'page6.html',anchor: 'HEALTH VERIFIED SOLUTION'},
+      {name: 'Health And Motivation by Saurabh BHOSALE',page: 'page6.html',anchor: 'Health And Motivation by Saurabh BHOSALE'},
+      {name: 'Stay Fit',page: 'page6.html',anchor: 'Stay Fit'},
+      {name: 'YATINDER SINGH',page: 'page6.html',anchor: 'YATINDER SINGH'},
+      {name: 'HealthifyMe',page: 'page6.html',anchor: 'HealthifyMe'},
+      {name: 'HEART ALCHEMY YOGA',page: 'page6.html',anchor: 'HEART ALCHEMY YOGA'},
+  
   ];
 
